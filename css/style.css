@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root {
+    --primary-background-color: white;
+               --primary-color: #212121;
+  --secondary-background-color: #313131;
+             --secondary-color: #616161;
+  --highlight-background-color: #ee6b2f;
+             --highlight-color: #30a7d7;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  font: normal 400 1rem/1 'SUSE', sans-serif;
+  justify-content: center;
+}
+
+/* HEADER */
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+/* CONTENTS */
+main {
+  width: 100%;
+}
+
+form {
+  padding: 0 1.6rem;
+  text-align: center;
+}
+
+fieldset {
+  border: 0;
+}
+
+input, button {
+  appearance: none;
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  height: 3.2rem;
+  outline: 0;
+}
+
+input {
+  background-color: var(--primary-background-color);
+  border: 0.2rem solid var(--secondary-color);
+  color: var(--secondary-background-color);
+  margin-bottom: 1.6rem;
+  padding: 0 0.8rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--highlight-background-color);
+  border: none;
+  color: var(--primary-background-color);
+  cursor: pointer;
+  padding: 0 2.4rem;
+}
+
+section {
+  padding: 0 1.6rem 1.6rem 1.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin: 1.6rem 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  font-size: 1.6rem;
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li span {
+  color: var(--primary-color);
+}
+
+#pokemon-id {
+  color: var(--secondary-color);
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.column {
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.column:last-of-type {
+  background-color: var(--highlight-color);
+  color: var(--primary-background-color);
+}
+
+@media only screen and (min-width: 576px) {
+  input {
+    margin-bottom: 0;
+    margin-right: 1.6rem;
+    max-width: 32rem;
+  }
+
+  section {
+    margin: 0 auto;
+    max-width: 54rem;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  .column {
+    width: 50%;
+  }
+}

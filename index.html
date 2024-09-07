@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="ie=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokémon Search App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Pokémon Search App</h1>
+    </header>
+    <!-- CONTENTS -->
+    <main>
+      <form>
+        <fieldset>
+          <legend class="sr-only">Enter the name or the number of an existing Pokémon to get its details</legend>
+          <label for="search-input"><span class="sr-only">Enter a Pokémon name or number:</span> <input id="search-input" type="search" required placeholder="Your Pokémon name to search …" autocomplete="off" spellcheck="false"></label>
+          <button id="search-button" type="button">Search</button>
+        </fieldset>
+      </form>
+      <section>
+        <h2><span id="pokemon-name"></span> <span id="pokemon-id"></span></h2>
+        <div class="row">
+          <div class="column">
+            <img id="sprite">
+          </div>
+          <div class="column">
+            <ul>
+              <li>Weight: <span id="weight"></span></li>
+              <li>Height: <span id="height"></span></li>
+              <li>Types: <span id="types"></span></li>
+              <li>HP: <span id="hp"></span></li>
+              <li>Attack: <span id="attack"></span></li>
+              <li>Special Attack: <span id="special-attack"></span></li>
+              <li>Defense: <span id="defense"></span></li>
+              <li>Special Defense: <span id="special-defense"></span></li>
+              <li>Speed: <span id="speed"></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
